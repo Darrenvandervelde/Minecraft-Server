@@ -1,0 +1,42 @@
+# Minecraft server directories
+server/world/
+server/world_nether/
+server/world_the_end/
+server/logs/
+server/crash-reports/
+server/server.jar
+server/eula.txt
+
+# Plugin and Mod files
+plugins/
+mods/
+
+# Backups
+backups/
+
+# Config files with sensitive data
+config/*.local
+config/*.private
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbsdb
+.env
+.env.local
+
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
+# Build artifacts
+dist/
+build/

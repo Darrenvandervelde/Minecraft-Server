@@ -29,4 +29,3 @@ cd server
 # Start the server
 echo "Starting server with ${MEMORY} minimum and ${MAX_MEMORY} maximum memory..."
 java -Xms${MEMORY} -Xmx${MAX_MEMORY} -jar server.jar nogui
-
