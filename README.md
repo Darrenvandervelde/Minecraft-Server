@@ -1,7 +1,5 @@
 # Minecraft Server
 
-<!--Hey There-->
-
 This repository contains the Minecraft Server configuration and setup.
 
 ## Directory Structure
