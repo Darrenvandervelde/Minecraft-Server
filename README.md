@@ -1,6 +1,6 @@
 # Minecraft Server
 
-This repository contains the Minecraft Server configuration and setup.
+This repository contains the configuration and setup files for the Minecraft server.
 
 ## Directory Structure
 
@@ -8,26 +8,28 @@ This repository contains the Minecraft Server configuration and setup.
 .
 ├── server/              # Server files and configuration
 ├── plugins/             # Server plugins
-├── mods/                # Server mods (if using Forge/Fabric)
+├── mods/                # Server mods (Forge or Fabric)
 ├── config/              # Configuration files
 ├── backups/             # Server backups
 ├── docker/              # Docker configuration
 └── scripts/             # Setup and management scripts
 ```
 
+## Requirements
+
+| Requirement | Details |
+|---|---|
+| Java | Version 17 or higher |
+| Docker | Docker and Docker Compose for containerized deployment |
+| RAM | Minimum 2GB, 4GB or more recommended |
+
 ## Getting Started
 
 1. Clone this repository
-2. Install Java (version 17 or higher recommended)
-3. Download the server jar file and place in `server/` directory
+2. Install Java 17 or higher
+3. Download the server jar file and place it in the `server/` directory
 4. Configure `server/server.properties`
 5. Run the server using `./scripts/start.sh`
-
-## Requirements
-
-- Java 17+
-- Docker & Docker Compose (for containerized deployment)
-- At least 2GB RAM (4GB+ recommended)
 
 ## Quick Start with Docker
 
@@ -37,13 +39,16 @@ docker-compose -f docker/docker-compose.yml up -d
 
 ## Server Configuration
 
-Edit `config/server.properties` to configure your server settings including:
-- Server name
-- Max players
-- Difficulty level
-- Game mode (survival, creative, adventure)
-- Port settings
-- PvP settings
+Edit `config/server.properties` to configure your server settings:
+
+| Setting | Description |
+|---|---|
+| Server name | The name displayed to players |
+| Max players | Maximum concurrent player count |
+| Difficulty | Peaceful, Easy, Normal, or Hard |
+| Game mode | Survival, Creative, or Adventure |
+| Port | The port the server listens on |
+| PvP | Enable or disable player vs player combat |
 
 ## Backups
 
@@ -52,6 +57,8 @@ Automatic backups can be created using the backup script:
 ```bash
 ./scripts/backup.sh
 ```
+
+Backups are stored in the `backups/` directory.
 
 ## Contributing
 
