@@ -1,5 +1,7 @@
 # Minecraft Server
 
+![poster](./poster.jpg)
+
 This repository contains the configuration and setup files for the Minecraft server.
 
 ## Directory Structure
